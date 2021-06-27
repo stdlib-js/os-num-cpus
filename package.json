@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-num-cpus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Number of CPUs.",
   "license": "Apache-2.0",
   "author": {
