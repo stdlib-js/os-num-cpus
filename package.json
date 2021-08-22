@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-num-cpus",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Number of CPUs.",
   "license": "Apache-2.0",
   "author": {
@@ -19,7 +19,6 @@
   "main": "./lib",
   "browser": "./lib/browser.js",
   "directories": {
-    "bin": "./bin",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
