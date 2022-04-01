@@ -1,0 +1,43 @@
+{
+  "name": "@stdlib/os-num-cpus",
+  "version": "0.0.0",
+  "description": "Number of CPUs.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/os-num-cpus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "cpus",
+    "cores",
+    "os",
+    "cpu",
+    "number",
+    "num",
+    "total",
+    "cluster",
+    "fork",
+    "process",
+    "cli",
+    "workers",
+    "concurrency",
+    "parallel"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
