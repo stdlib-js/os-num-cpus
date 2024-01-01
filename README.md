@@ -35,19 +35,98 @@ limitations under the License.
 
 > Number of CPUs.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/os-num-cpus
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
 
+## Usage
 
+```javascript
+var NUM_CPUS = require( '@stdlib/os-num-cpus' );
+```
+
+#### NUM_CPUS
+
+Number of CPUs.
+
+```javascript
+var n = NUM_CPUS;
+// returns <number>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   In a web browser, the number of CPUs is determined by querying the hardware concurrency [API][hardware-concurrency].
+-   Otherwise, the number of CPUs is determined via the [os][node-os] module.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- run-disable -->
+
+<!-- eslint-disable node/no-process-exit -->
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var proc = require( 'process' );
+var cluster = require( 'cluster' );
+var NUM_CPUS = require( '@stdlib/os-num-cpus' );
+
+var i;
+
+function onTimeout() {
+    proc.exit( 0 );
+}
+
+if ( cluster.isMaster ) {
+    for ( i = 0; i < NUM_CPUS; i++ ) {
+        cluster.fork();
+    }
+} else {
+    console.log( 'Worker %s. Process id: %d.', cluster.worker.id, cluster.worker.process.pid );
+
+    setTimeout( onTimeout, 1000 );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -65,7 +144,7 @@ npm install -g @stdlib/os-num-cpus-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: num-cpus [options]
@@ -82,7 +161,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ num-cpus
@@ -101,11 +180,6 @@ $ num-cpus
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/os-num-cpus`][@stdlib/os-num-cpus]</span><span class="delimiter">: </span><span class="description">number of CPUs.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -123,7 +197,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -136,7 +210,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -146,8 +220,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/os-num-cpus-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/os-num-cpus-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/os-num-cpus.svg
+[npm-url]: https://npmjs.org/package/@stdlib/os-num-cpus
 
 [test-image]: https://github.com/stdlib-js/os-num-cpus/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/os-num-cpus/actions/workflows/test.yml?query=branch:main
