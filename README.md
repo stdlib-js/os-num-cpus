@@ -35,14 +35,33 @@ limitations under the License.
 
 > Number of CPUs.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/os-num-cpus
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@esm/index.mjs';
+var NUM_CPUS = require( '@stdlib/os-num-cpus' );
 ```
 
 #### NUM_CPUS
@@ -79,15 +98,10 @@ var n = NUM_CPUS;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
+```javascript
 var proc = require( 'process' );
 var cluster = require( 'cluster' );
-import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@esm/index.mjs';
+var NUM_CPUS = require( '@stdlib/os-num-cpus' );
 
 var i;
 
@@ -104,17 +118,65 @@ if ( cluster.isMaster ) {
 
     setTimeout( onTimeout, 1000 );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/os-num-cpus-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: num-cpus [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ num-cpus
+<number>
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -133,7 +195,7 @@ if ( cluster.isMaster ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -191,8 +253,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/os-num-cpus/tree/deno
+[deno-readme]: https://github.com/stdlib-js/os-num-cpus/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/os-num-cpus/tree/umd
+[umd-readme]: https://github.com/stdlib-js/os-num-cpus/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/os-num-cpus/tree/esm
+[esm-readme]: https://github.com/stdlib-js/os-num-cpus/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/os-num-cpus/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/os-num-cpus/main/LICENSE
