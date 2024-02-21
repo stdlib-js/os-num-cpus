@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@esm/index.mjs';
+import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@v0.2.1-esm/index.mjs';
 ```
 
 #### NUM_CPUS
@@ -87,7 +87,7 @@ var n = NUM_CPUS;
 
 var proc = require( 'process' );
 var cluster = require( 'cluster' );
-import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@esm/index.mjs';
+import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@v0.2.1-esm/index.mjs';
 
 var i;
 
