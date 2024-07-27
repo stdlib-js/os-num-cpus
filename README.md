@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-num-cpus/tags). For example,
+
+```javascript
 import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@v0.2.2-deno/mod.js';
 ```
 
@@ -82,7 +87,7 @@ var n = NUM_CPUS;
 ```javascript
 var proc = require( 'process' );
 var cluster = require( 'cluster' );
-import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@v0.2.2-deno/mod.js';
+import NUM_CPUS from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-num-cpus@deno/mod.js';
 
 var i;
 
