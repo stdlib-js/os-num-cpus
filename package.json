@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-num-cpus",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Number of CPUs.",
   "license": "Apache-2.0",
   "author": {
@@ -40,14 +40,14 @@
   },
   "dependencies": {
     "@stdlib/cli-ctor": "^0.2.2",
-    "@stdlib/fs-read-file": "^0.2.2"
+    "@stdlib/fs-read-file": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.2",
     "@stdlib/assert-is-positive-integer": "^0.2.2",
     "@stdlib/assert-is-windows": "^0.2.2",
     "@stdlib/process-exec-path": "^0.2.2",
-    "@stdlib/utils-define-property": "^0.2.4",
+    "@stdlib/utils-define-property": "^0.2.5",
     "@stdlib/utils-global": "^0.2.2",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
