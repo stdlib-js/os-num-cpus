@@ -94,7 +94,7 @@ var n = NUM_CPUS;
 
 <!-- run-disable -->
 
-<!-- eslint-disable node/no-process-exit -->
+<!-- eslint-disable n/no-process-exit -->
 
 <!-- eslint no-undef: "error" -->
 
