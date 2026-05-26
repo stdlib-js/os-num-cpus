@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-28)
+## Unreleased (2026-05-26)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`4531b43`](https://github.com/stdlib-js/stdlib/commit/4531b43128fd72fd9c8104187d2fd3ae3cf321d7) - **docs:** fix JSDoc text [(#12296)](https://github.com/stdlib-js/stdlib/pull/12296) _(by Philipp Burckhardt)_
 -   [`d689d2d`](https://github.com/stdlib-js/stdlib/commit/d689d2dcba1570eedbbe3b7689dcbe1921ba11eb) - **chore:** propagate `node/` -> `n/` eslint plugin prefix update across README directives [(#11826)](https://github.com/stdlib-js/stdlib/pull/11826) _(by Philipp Burckhardt)_
 
 </details>
